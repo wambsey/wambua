@@ -1,0 +1,530 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- load the css file -->
+<link href="../css/materiallist.css" rel="stylesheet" type="text/css">
+<link type="text/css" href="/oukc/jquery/themes/base/jquery.ui.all.css" rel="stylesheet" />
+<script type="text/javascript" src="/oukc/jquery/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/oukc/js/oukcJsUtils.js"></script>
+<script>  var v_accept_msg1 = 'You have requested';  var v_accept_msg2 = 'free trial.';
+</script>
+<script type="text/javascript" src="/oukc/jquery/external/jquery.bgiframe-2.1.1.js"></script>
+<script type="text/javascript" src="/oukc/jquery/ui/jquery.ui.core.min.js"></script>
+<script type="text/javascript" src="/oukc/jquery/ui/jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="/oukc/jquery/ui/jquery.ui.mouse.min.js"></script>
+<script type="text/javascript" src="/oukc/jquery/ui/jquery.ui.button.min.js"></script>
+<script type="text/javascript" src="/oukc/jquery/ui/jquery.ui.draggable.min.js"></script>
+<script type="text/javascript" src="/oukc/jquery/ui/jquery.ui.position.min.js"></script>
+<script type="text/javascript" src="/oukc/jquery/ui/jquery.ui.resizable.min.js"></script>
+<script type="text/javascript" src="/oukc/jquery/ui/jquery.ui.dialog.min.js"></script>
+<!-- For IE 6 or earlier hide the Y scroll bar for the bits indicated by "* html" in the css -->
+
+<!--[if lte IE 6]>
+<style type="text/css"> 
+/*<![CDATA[*/ 
+html {overflow-x:auto; overflow-y:hidden;}
+body {overflow-y:auto;}
+/*]]>*/
+</style>
+<![endif]-->
+
+<SCRIPT language=JavaScript>
+
+   var selected_doc;
+   var cm_doc1='ILT/../PDF/D78846GC20/D78846GC20_sg1.pdf';
+   var cm_doc2='ILT/../PDF/D78846GC20/D78846GC20_sg2.pdf';
+   var cm_doc3='ILT/../PDF/D78846GC20/D78846GC20_ag.pdf';
+   var doc1='ILT/../PDF/D78846GC20/lessons/D78846GC20_TOC.pdf';
+   var doc3='ILT/../PDF/D78846GC20/lessons/D78846GC20_les001.pdf';
+   var doc5='ILT/../PDF/D78846GC20/lessons/D78846GC20_les002.pdf';
+   var doc7='ILT/../PDF/D78846GC20/lessons/D78846GC20_les003.pdf';
+   var doc9='ILT/../PDF/D78846GC20/lessons/D78846GC20_les004.pdf';
+   var doc11='ILT/../PDF/D78846GC20/lessons/D78846GC20_les005.pdf';
+   var doc13='ILT/../PDF/D78846GC20/lessons/D78846GC20_les006.pdf';
+   var doc15='ILT/../PDF/D78846GC20/lessons/D78846GC20_les007.pdf';
+   var doc17='ILT/../PDF/D78846GC20/lessons/D78846GC20_les008.pdf';
+   var doc19='ILT/../PDF/D78846GC20/lessons/D78846GC20_les009.pdf';
+   var doc21='ILT/../PDF/D78846GC20/lessons/D78846GC20_les10.pdf';
+   var doc23='ILT/../PDF/D78846GC20/lessons/D78846GC20_les11.pdf';
+   var doc25='ILT/../PDF/D78846GC20/lessons/D78846GC20_les12.pdf';
+   var doc27='ILT/../PDF/D78846GC20/lessons/D78846GC20_les13.pdf';
+   var doc29='ILT/../PDF/D78846GC20/lessons/D78846GC20_les14.pdf';
+   var doc31='ILT/../PDF/D78846GC20/lessons/D78846GC20_les15.pdf';
+   var doc33='ILT/../PDF/D78846GC20/lessons/D78846GC20_les16.pdf';
+   var doc35='ILT/../PDF/D78846GC20/lessons/D78846GC20_les17.pdf';
+   var doc37='ILT/../PDF/D78846GC20/lessons/D78846GC20_les18.pdf';
+   var doc39='ILT/../PDF/D78846GC20/lessons/D78846GC20_les19.pdf';
+   var doc41='ILT/../PDF/D78846GC20/lessons/D78846GC20_les20.pdf';
+   var doc43='ILT/../PDF/D78846GC20/lessons/D78846GC20_les21.pdf';
+   var doc45='ILT/../PDF/D78846GC20/lessons/D78846GC20_les22.pdf';
+   var doc47='ILT/../PDF/D78846GC20/lessons/D78846GC20_les23.pdf';
+
+   var stop_scroll = false; 
+   
+   //Disable right mouse click Script
+   //By Maximus (maximus@nsimail.com) w/ mods by DynamicDrive
+   //For full source code, visit http://www.dynamicdrive.com
+
+   ///////////////////////////////////
+   function clickIE4(){
+   if (event.button==2){
+   return false;
+   }
+   }
+
+   function clickNS4(e){
+   if (document.layers||document.getElementById&&!document.all){
+   if (e.which==2||e.which==3){
+   return false;
+   }
+   }
+   }
+
+   if (document.layers){
+   document.captureEvents(Event.MOUSEDOWN);
+   document.onmousedown=clickNS4;
+   }
+   else if (document.all&&!document.getElementById){
+   document.onmousedown=clickIE4;
+   }
+
+   document.oncontextmenu=new Function("return false")
+
+    function doPrintable(doc){
+           if(isFirstTime){
+               selected_doc = doc;
+               overlay();
+           }else{
+               document.process.action='pdfwatermarker.pdf';
+               document.process.file.value=doc;
+               document.process.submit();
+           }
+    }
+    
+    function reloadMLforGCC(){
+           var selectekit = document.process.ekitselect;
+           var vary = selectekit.options[selectekit.selectedIndex].value.split(',');
+           document.process.action=vary[3];
+           document.process.file.value='';
+           document.process.gcc.value=vary[0];
+           document.process.classroomId.value=vary[1];
+           document.process.rcoId.value=vary[2];
+           document.process.submit();
+    }
+    
+    function genCertificate(){
+               document.process.action='ecertificate.pdf';
+               document.process.submit();
+    }
+    function genAPACertificate(){
+               document.process.action='apaPdfGenerator';
+               document.process.submit();
+    }
+    function genPMICertificate(){
+               document.process.action='pmiPdfGenerator';
+               document.process.submit();
+    }
+    function genCPECertificate(){window.open("/oukc/ekit/cpequestionsform?userId=1997157755&classroomId=1584527055&company=&accessId=-1&rcoId=1583324783","Browse","left=300,top=250,width=580,height=260,toolbar=0,resizable=0")
+    }
+    
+   function overlay(e) {
+       $('#overlaydiv').draggable();
+       el = document.getElementById("overlay");
+       el.style.visibility = "visible";
+      //el.style.left = (posx/2);
+   }
+   function agree(){
+        isFirstTime=false;
+        el = document.getElementById("overlay");
+        el.style.visibility = "hidden";
+        document.process.action='pdfwatermarker.pdf';
+        document.process.file.value=selected_doc;
+        document.process.submit();
+   }
+
+   function notagree(){
+        el = document.getElementById("overlay");
+        el.style.visibility = "hidden";
+   }
+   function scrolltop(){
+     if(stop_scroll ==true){
+       scroll(0,0) ;
+     }
+   }
+
+</SCRIPT>
+
+</head>
+<BODY marginwidth=0 marginheight=0 leftmargin=0 topmargin=0  onscroll="scrolltop();">
+<form name=process action='pdfwatermarker.pdf' method='POST'>
+
+<div id="page_body">
+  <input type="hidden" name="company" value=""/>
+  <input type="hidden" name="reqtype" value="1"/>
+  <input type="hidden" name="file" value="ILT/D78846GC20_details.xml"/>
+  <input type="hidden" name="download" value="TRUE"/>
+  <input type="hidden" name="option" value="2"/>
+  <input type="hidden" name="layout" value="P"/>
+  <input type="hidden" name="CS" value="1"/>
+  <input type="hidden" name="language" value="null"/>
+  <input type="hidden" name="userId" value="n62BjwUcXVXlptUiA5WcMQ=="/>
+  <input type="hidden" name="classroomId" value="1584527055"/>
+  <input type="hidden" name="rcoId" value="1583324783"/>
+  <input type="hidden" name="gcc" value="D78846GC20"/>
+
+<br>
+<table width="70%" align="center" >
+  <tr>
+    <td colspan=2 width="100%" align=center> <span class="style8">This document requires Adobe Acrobat.<b><a href="http://www.adobe.com/products/acrobat/readstep2.html" BORDER="0" ALT="download Acrobat Reader" target='_blank'>Click here</a></b> to download </span> </td>
+  </tr>
+  <tr>
+    <td valign="top">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <TR>
+  <TD width="100%" colSpan=2 align=middle>
+  <TABLE border=0 cellSpacing=0 cellPadding=0 align=center>
+  <TBODY>
+  <TR>
+    <TD class=popupsideupleft></TD>
+    <TD class=popupsideup></TD>
+    <TD class=popupsideupright></TD></TR>
+  <TR>
+    <TD class=popupsideleft></TD>
+    <TD bgColor=#ededd6>
+      <TABLE border=0 cellSpacing=4 cellPadding=1 width=550>
+        <TBODY>
+        <TR>
+          <TD colSpan=2 align=left><IMG src="../images/icon_info.gif" width=29 height=17><SPAN class=popupstyle1>Congratulations!!</SPAN></TD></TR>
+        <TR>
+          <TD class=popupline colSpan=2>&nbsp;</TD></TR>
+        <TR>
+          <TD colSpan=2 align=left><SPAN class=popupstyle2>You have successfully completed your course. Please click the link below to download your completion certificate.</SPAN><BR><BR></TD></TR>
+        <TR>
+          <TD colspan=2>
+            <DIV align=center>
+            <TABLE border=0 cellSpacing=0 cellPadding=0>
+              <TBODY>
+              <TR>
+                <TD class=popupbustart></TD>
+                <TD class=popupbu><A class=popup onclick='genCertificate();'>Download Completion Certificate</A></TD>
+                <TD class=popupbuend></TD></TR></TBODY></TABLE></DIV></TD>
+          </TD>
+               </TR>
+              </TBODY>
+          </TABLE>
+    <TD class=popupsideright></TD></TR>
+  <TR>
+    <TD class=popupsidedownleft></TD>
+    <TD class=popupsidedown></TD>
+    <TD class=popupsidedownright></TD></TR></TBODY></TABLE>
+    <input type="hidden" name="event_id" value="5159595"/>
+    <input type="hidden" name="enrollment_id" value="8405481"/>
+    <input type="hidden" name="apa" value="RCH"/>
+    <input type="hidden" name="pmi" value="PDU"/>
+    <input type="hidden" name="cpe" value="CPE"/>
+   </TD>
+   </TR>
+   <TR>
+    <TD vAlign=top>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+  </TR>
+  <tr>
+    <td width="14%" valign="top" class="style1">Course&nbsp;Name: </td>
+    <td width="86%"><span class="style7">Oracle Database 12c: Administration Workshop Ed 2</span></td>
+  </tr>
+  <tr>
+    <td valign="top" class="style1"> Description: </td>
+    <td class="style7">The Oracle Database 12c: Administration Workshop will help you build a firm foundation in administration of an Oracle Database. You'll learn about the Oracle Database architecture and how to effectively manage an Oracle Database.</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="style9"><P><B>ATTENTION!!</B> Please read prior to downloading this Oracle University Student Guide.</P><P>If you download this Oracle University Student Guide, in whole or in part, you will be obligated to pay 100% of your Oracle University course registration fees,<b> not withstanding anything to the contrary in Oracle University's published cancellation and reschedule policies.</b> Therefore, do not begin the course material download process until you are certain you will be attending the class.</P></td>
+  </tr>
+    <tr>
+    <td colspan=2>
+<br><table width="100%" align="center" cellpadding="0" cellspacing="0" bgcolor="#D3D3A9">
+      <tr>
+        <td><table width="100%" border="0" align="center" cellpadding="4" cellspacing="1" bordercolor="#BEBE7E">
+            <tr bgcolor="#FFFFFF">
+              <td class="style10" align="right">
+                     <span class="style7">You have selected to download your eKit inÃŠ: </span>           <select name="ekitselect" onChange="reloadMLforGCC();">              <option value='D78846GC20,1584527055,1583324783,materiallist' selected>English</option>              <option value='D78846DE20,1656619830,1656172558,materiallist'>German</option>              <option value='D78846FR20,1659070627,1658903744,materiallist'>French</option>              <option value='D78846KR20,1656210713,1615591009,materiallist'>Korean</option>              </select>
+              </td>
+            </tr>
+            </table>
+    </td>
+    </tr>
+            </table>
+    </td>
+    </tr>
+</table>
+<table width="70%" align="center">
+  <tr>
+    <td><table width="100%" align="center" cellpadding="0" cellspacing="0" bgcolor="#D3D3A9">
+      <tr>
+        <td><table width="100%" border="0" align="center" cellpadding="4" cellspacing="1" bordercolor="#BEBE7E">
+            <tr bgcolor="#FFFFFF">
+              <th colspan="4" class="style10" align="left">Download the complete Course to receive all the lessons and labs in one file.</th>
+            </tr>
+            <tr bgcolor="#C6C68A" class="style1">
+              <td>Complete Course </td>
+              <td>File Size</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr bgcolor="#FFFFCC">
+              <td><span class="style7">Oracle Database 12c: Administration Workshop Ed 2 (Student Guide - Volume 1)</span></td>
+              <td><span class="style7">12.20 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(cm_doc1)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFCC">
+              <td><span class="style7">Oracle Database 12c: Administration Workshop Ed 2 (Student Guide - Volume 2)</span></td>
+              <td><span class="style7">12.61 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(cm_doc2)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFCC">
+              <td><span class="style7">Oracle Database 12c: Administration Workshop Ed 2 (Activity Guide)</span></td>
+              <td><span class="style7">9.34 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(cm_doc3)">Download</a> </span></td>
+            </tr>
+            </table>
+    </td>
+    </tr>
+            </table>
+    </td>
+    </tr>
+    <tr>
+            <td><table width="100%" border="0" align="center" cellpadding="4" cellspacing="1" bordercolor="#FFFFFF">
+            <tr bgcolor="#FFFFFF" valign="middle" height="50px" style="border: 0pt;">
+              <th align="center" class="style10" colspan="4">- Or -</th>
+            </tr>
+            </table></td>
+    </tr>
+    <tr>
+    <td><table width="100%" align="center" cellpadding="0" cellspacing="0" bgcolor="#D3D3A9">
+      <tr>
+        <td><table width="100%" border="0" align="center" cellpadding="4" cellspacing="1" bordercolor="#BEBE7E">
+            <tr bgcolor="#FFFFFF">
+              <th colspan="4" class="style10" align="left">For your convenience, you may choose to download individual course lessons. Please note that it is not necessary to download individual lessons if you have already downloaded the complete course.</th>
+            </tr>
+            <tr bgcolor="#C6C68A" class="style1">
+              <td>Lessons</td>
+              <td>File Size</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr bgcolor="#FFFFCC">
+              <td><span class="style7">Table of Contents</span></td>
+              <td><span class="style7">0.53 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc1)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFEA">
+              <td><span class="style7">Lesson 01: Introduction</span></td>
+              <td><span class="style7">0.50 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc3)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFCC">
+              <td><span class="style7">Lesson 02: Exploring Oracle Database Architecture</span></td>
+              <td><span class="style7">1.35 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc5)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFEA">
+              <td><span class="style7">Lesson 03: Oracle Database Management Tools</span></td>
+              <td><span class="style7">1.91 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc7)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFCC">
+              <td><span class="style7">Lesson 04: Managing the Database Instance</span></td>
+              <td><span class="style7">0.70 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc9)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFEA">
+              <td><span class="style7">Lesson 05: Configuring the Oracle Network Environment</span></td>
+              <td><span class="style7">1.46 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc11)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFCC">
+              <td><span class="style7">Lesson 06: Administering User Security</span></td>
+              <td><span class="style7">2.98 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc13)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFEA">
+              <td><span class="style7">Lesson 07: Managing Database Storage Structures</span></td>
+              <td><span class="style7">1.49 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc15)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFCC">
+              <td><span class="style7">Lesson 08: Managing Space</span></td>
+              <td><span class="style7">1.02 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc17)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFEA">
+              <td><span class="style7">Lesson 09: Managing Undo Data</span></td>
+              <td><span class="style7">0.82 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc19)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFCC">
+              <td><span class="style7">Lesson 10: Managing Data Concurrency</span></td>
+              <td><span class="style7">0.57 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc21)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFEA">
+              <td><span class="style7">Lesson 11: Implementing Oracle Database Auditing</span></td>
+              <td><span class="style7">0.88 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc23)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFCC">
+              <td><span class="style7">Lesson 12: Backup and Recovery: Concepts</span></td>
+              <td><span class="style7">1.33 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc25)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFEA">
+              <td><span class="style7">Lesson 13: Backup and Recovery: Configuration</span></td>
+              <td><span class="style7">0.69 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc27)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFCC">
+              <td><span class="style7">Lesson 14: Performing Database Backups</span></td>
+              <td><span class="style7">1.15 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc29)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFEA">
+              <td><span class="style7">Lesson 15: Performing Database Recovery</span></td>
+              <td><span class="style7">0.41 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc31)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFCC">
+              <td><span class="style7">Lesson 16: Moving Data</span></td>
+              <td><span class="style7">1.20 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc33)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFEA">
+              <td><span class="style7">Lesson 17: Database Maintenance</span></td>
+              <td><span class="style7">1.62 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc35)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFCC">
+              <td><span class="style7">Lesson 18: Managing Performance</span></td>
+              <td><span class="style7">1.99 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc37)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFEA">
+              <td><span class="style7">Lesson 19: Managing Performance: SQL Tuning</span></td>
+              <td><span class="style7">2.11 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc39)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFCC">
+              <td><span class="style7">Lesson 20: Using Database Resource Manager</span></td>
+              <td><span class="style7">1.02 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc41)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFEA">
+              <td><span class="style7">Lesson 21: Using Oracle Scheduler to Automate Tasks</span></td>
+              <td><span class="style7">0.65 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc43)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFCC">
+              <td><span class="style7">Lesson 22: Oracle Database Cloud Service: Overview</span></td>
+              <td><span class="style7">0.69 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc45)">Download</a> </span></td>
+            </tr>
+            <tr bgcolor="#FFFFEA">
+              <td><span class="style7">Appendix A: Working with Oracle Support</span></td>
+              <td><span class="style7">2.03 MB</span></td>
+              <td><span class="style7"><a href="javascript: doPrintable(doc47)">Download</a> </span></td>
+            </tr>
+         </table></td>
+      </tr>
+    </table></td>
+  </tr>
+    <tr>
+    <td><p>&nbsp;</p><table width="100%" align="center" cellpadding="0" cellspacing="0" bgcolor="#D3D3A9">
+      <tr>
+        <td><table width="100%" border="0" align="center" cellpadding="4" cellspacing="1" bordercolor="#BEBE7E">
+            <tr bgcolor="#FFFFFF">
+              <td class="style10" align="left"><img style=vertical-align:middle src=../images/ico_form.gif> If you experience any technical issues, contact our Global Help Desk by submitting a <a href="http://origin-education.oracle.com/pls/eval-eddap-dcd/autosr_ekit.home?p_sid=SRC009&p_org_id=1001&p_lang=US&p_key=1584527055" target="_blank">support form</a></td>
+            </tr>
+            </table>
+    </td>
+    </tr>
+            </table>
+    </td>
+    </tr>
+</table>
+<p><br>
+<table width="98%" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td width="10">&nbsp;</td>
+    <td align="left" class="footback"><span class="style3"> Copyright Â© 2013, Oracle Corporation. All rights reserved. </span></td>
+    <td align="right" class="footback"> <span class="style3"><a class="footer" href="http://origin-education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=199" target="_blank">About Oracle University</a> | <a class="footer" href="http://origin-education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=160" target="_blank">OUKC Home</a> | <a class="footer" href="http://origin-education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=76" target="_blank">Browse Online Course Catalog</a> | <a class="footer" href="http://origin-education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=225" target="_blank">Contact Us</a></span></td>
+
+    <td width="10">&nbsp;</td>
+  </tr>
+</table>
+</div>
+  <input type="hidden" name="accessId" value="-1"/>
+</form>
+<SCRIPT language=JavaScript>
+   var isFirstTime=true;
+</SCRIPT>
+
+<div id="overlay">
+    <div id="overlaybak"></div>
+   <div id="overlaydiv">
+          <table border="0" align="center" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+   <td class="popupsideupleft"></td>
+   <td class="popupsideup"></td>
+    <td class="popupsideupright"></td>
+  </tr>
+  <tr>
+    <td class="popupsideleft"></td>
+    <td bgcolor="#EDEDD6"><table width="400" border="0" align="center" cellpadding="1" cellspacing="4" >
+      <tr>
+        <td colspan="2"><img src="../images/icon_info.gif" width="29px" height="17px"> <span class="popupstyle1">Notification</span> </td>
+        </tr>
+      <tr>
+        <td colspan="2" class="popupline">&nbsp;</td>
+        </tr>
+      <tr>
+        <td colspan="2"><span class="popupstyle2"><B>ATTENTION!</B> Please read prior to downloading this Oracle University Student Guide.<BR><BR>If you download this Oracle University Student Guide, in whole or in part, you will be obligated to pay 100% of your Oracle University course registration fees,<b> not withstanding anything to the contrary in Oracle University's published cancellation and reschedule policies.</b> Therefore, do not begin the course material download process until you are certain you will be attending the class.
+              </span><br><br></td>
+        </tr>
+      <tr>
+        <td><div align="center">
+          <table border="0" cellpadding="0" cellspacing="0" >
+              <tr>
+                <td class="popupbustart"></td>
+                <td class="popupbu"><a class=popup onclick='agree()'>I Agree !</a></td>
+                <td class="popupbuend"></td>
+              </tr>
+                  </table>
+        </div></td>
+        <td><div align="center">
+          <table border="0" cellpadding="0" cellspacing="0" >
+              <tr>
+                <td class="popupbustart"></td>
+                <td class="popupbu"><a class=popup onclick='notagree()'>Cancel</a></td>
+                <td class="popupbuend"></td>
+              </tr>
+                  </table>
+        </div></td>
+      </tr>
+    </table></td>
+    <td class="popupsideright"></td>
+  </tr>
+  <tr>
+    <td class="popupsidedownleft"></td>
+    <td class="popupsidedown"></td>
+    <td class="popupsidedownright"></td>
+  </tr>
+</table>
+    </div>
+</div>
+</BODY>
+</HTML>
+‚àÀS      Y¹ÆY¹Ç>þ       ?    ~1503508505,:http://ilearning.oracle.com/oukc/ekit/materiallist necko:classified 1 request-method POST response-head HTTP/1.1 200 OK
+Date: Wed, 23 Aug 2017 10:22:14 GMT
+Server: Oracle-Application-Server-10g
+Cache-Control: no-cache
+Content-Type: text/html; charset=UTF-8
+ charset UTF-8 uncompressed-len 0   eE

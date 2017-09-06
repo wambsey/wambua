@@ -1,0 +1,422 @@
+/* Requirements of tree implementors:
+     - call initializeTree in onLoad of frame that includes this library
+     - call setMessages in onLoad to initialize nls messages
+     - call treeReloaded in onLoad of frame that includes the tree
+     - define functions confirmDelete() and getAdditionalParameters() in the
+       frame that includes this library
+*/
+
+   // Constants Actions
+   var SEARCH          = "search";
+   var EXPAND_ALL      = "expandAll";
+   var COLLAPSE_ALL    = "collapseAll";
+   var NARROW          = "narrow";
+   var WIDEN           = "widen";
+   var WIDEN_ALL       = "widenAll";
+   var ADD             = "add_";
+   var ADD_TEST        = "addTest_";
+   var DELETE          = "delete";
+   var UP              = "moveUp";
+   var DOWN            = "moveDown";
+   
+   // Constants Parm names
+   var ACTION_PARM      = "action";
+   var SELECTED_PARM    = "id";
+   var TYPE_PARM        = "type";
+   var PARENT_PARM      = "parent";
+   var PARENT_TYPE_PARM = "parentType";
+   var DISABLED_PARM    = "disabled";
+   var SEARCH_PARM      = "search";
+   var EXPANDED_PARM    = "expanded";
+   var ANNOTATED_PARM   = "annotated";
+   var NARROW_PARM      = "narrow";
+   
+   // Other Constants
+   var SELECTION_COLOR  = "#336699";
+
+   var treeWin         = null;
+   var lookupWindow    = null;
+
+   // Keep track of info about the selected node.
+   var selectedId      = null;
+   var parentId        = null;
+   var type            = null;
+   var parentId        = null;
+   var parentType      = null;
+   var isDisabled      = false;
+
+   // Ability to autoscroll to a different node than the selectedId (located a node in the tree)
+   var locateId        = null;
+   
+   // Store off the old selection values before the form is submitted.
+   var oldSelectedId      = null;
+   var oldType            = null;
+   var oldParentId        = null;
+   var oldParentType      = null;
+   var oldDisabled        = false;
+
+   // Keep track of the last node added.
+   var lastNodeAddedId         = null;
+   var lastNodeAddedType       = null;
+   var lastNodeAddedParentId   = null;
+   var lastNodeAddedParentType = null;
+   var lastNodeAddedDisabled   = false;
+   
+   // Keep track of previous selections for selecting and deselecting
+   var previousSel     = null;
+   var previousColor   = "black";
+
+   // Messages - Must be initialized with setMessages()
+   var msgNothingSelected  = "Usage Error:  setMessages() not called.";
+   var msgEmptySearch      = "Usage Error:  setMessages() not called.";
+   var msgNotSiteAction    = "Usage Error:  setMessages() not called.";
+
+
+function initializeTree(treeWindow) {
+   // treeWindow can be a window, frame, or frame set
+   treeWin   = treeWindow;
+}
+
+
+function setMessages(nothingSelectedMsg, emptySearchMsg, notSiteActionMsg) {
+   msgNothingSelected = nothingSelectedMsg;
+   msgEmptySearch     = emptySearchMsg;
+   msgNotSiteAction   = notSiteActionMsg;
+}
+
+
+function treeReloaded(selected, selectedType, selectedParent, selectedParentType, disabledFlag) {
+   // A notification that the tree document was reloaded.  Use the provided 
+   // selection info only if I don't have a current selection.
+   if (selectedId == null) {
+      setSelection(selected, selectedType, selectedParent, selectedParentType, disabledFlag);
+   }
+
+   indicateSelection();
+   doAutoScroll();
+}
+
+
+function setSelection(selected, selectedType, selectedParent, selectedParentType, disabledFlag) {
+   // If the selection is changing, reset the last node added variables and close 
+   // the lookup window.
+   if (selectedId != selected) {
+      nodeAdded(null, null, null, null, false);
+      if (lookupWindow != null && !lookupWindow.closed) {
+         lookupWindow.close();
+      }
+   }
+
+   selectedId = selected;
+   type       = selectedType;
+   parentId   = selectedParent;
+   parentType = selectedParentType;
+   isDisabled = disabledFlag;
+}
+
+
+function saveSelections() {
+   // Save off the current selection values.
+   oldSelectedId      = selectedId;
+   oldType            = type;
+   oldParentId        = parentId;
+   oldParentType      = parentType;
+   oldDisabled        = isDisabled;
+}
+
+
+function reloadFromSavedSelections() {
+   setSelection(oldSelectedId, oldType, oldParentId, oldParentType, oldDisabled);
+   treeReloaded(oldSelectedId, oldType, oldParentId, oldParentType, oldDisabled);
+}
+
+
+function nodeAdded(addedId, addedType, addedParent, addedParentType, addedDisabled) {
+   // Keep track of the last node added.
+   lastNodeAddedId         = addedId;
+   lastNodeAddedType       = addedType;
+   lastNodeAddedParentId   = addedParent;
+   lastNodeAddedParentType = addedParentType;
+   lastNodeAddedDisabled   = addedDisabled;
+}
+
+
+function reloadFromLastAdded() {
+   // If nothing was previously added, keep the same selections.
+   if (lastNodeAddedId != null) {
+      setSelection(lastNodeAddedId, lastNodeAddedType, lastNodeAddedParentId, lastNodeAddedParentType, lastNodeAddedDisabled);
+   }
+   treeReloaded(lastNodeAddedId, lastNodeAddedType, lastNodeAddedParentId, lastNodeAddedParentType, lastNodeAddedDisabled);
+}
+
+
+function indicateSelection() {
+   if (selectedId != null) {
+      var browserType = navigator.userAgent.toLowerCase();
+      if (browserType.indexOf('firefox/1') != -1 ||
+          browserType.indexOf('firefox/2') != -1)
+      {
+         _indicateSelectionByHighlight();
+      } else {
+         _indicateSelectionByHighlight();
+      }
+      previousSel = selectedId;
+   }
+}
+
+
+function _indicateSelectionByImage() {
+   // deselect the current selection
+   if (previousSel != null) {
+      var previousImg = treeWin.document.images["E" + previousSel];
+      if (previousImg != null) {
+         var prevSrc = previousImg.src;
+         var deselectedImg = prevSrc.replace("Sel.gif", ".gif");
+         previousImg.src = deselectedImg;
+      }
+   }
+
+   // Make id the current selection
+   // The selection may not be showing (after a collapse)
+   var currImg = treeWin.document.images["E" + selectedId];
+   if (currImg == null) {
+      // Reset the selection if it's not showing.
+      setSelection(null, "null", null, "null", false);
+   } else {
+      var currSrc = currImg.src;
+      // Make sure the image is not already selected
+      if (currSrc.indexOf("Sel.gif") == -1) {
+         var selectedImg = currSrc.replace(".gif", "Sel.gif");
+         currImg.src = selectedImg;
+      }
+   }
+}
+
+
+function _indicateSelectionByHighlight() {
+   // Deselect (unhighlight) the current selection
+   var deselObj = treeWin.document.getElementById("A" + previousSel);
+   if (deselObj != null) {
+      deselObj.style.backgroundColor = treeWin.document.bgColor;
+      deselObj.style.color = previousColor;
+   }
+
+   // Highlight selection 
+   var selObj = treeWin.document.getElementById("A" + selectedId);
+   // The selection may not be showing (after a collapse)
+   if (selObj == null) {
+      // Reset the selection if it's not showing.
+      setSelection(null, "null", null, "null", false);
+   } else {
+      selObj.style.backgroundColor = SELECTION_COLOR;
+      previousColor = selObj.style.color;
+      selObj.style.color = "white";
+   }
+}
+
+
+function doAutoScroll() {
+   // Sets the image to either the add field or selected node.
+   // Then scrolls to the image.
+
+   // First check if an add field is in the tree.
+   var image = treeWin.document.images["EADD"];
+   if (image != null) {
+      // There is an add field.  Set the focus.
+      var addField = treeWin.getTreeForm().title;
+      if (addField != null) {
+         addField.focus();
+      
+      }
+   } else { 
+      // Scroll to the currently annotated or selected item.
+      if (locateId != null) {
+         // Find the object that is annotated
+         image = treeWin.document.images["E" + locateId];
+      } else if (selectedId != null) {
+         // Find the object that is selected
+         image = treeWin.document.images["E" + selectedId];
+      }
+   }
+
+   // If either image is found, scroll to it.
+   if (image != null) {
+      var y = 0;
+      if (navigator.appName == "Netscape") {
+         y = image.y;
+      } else {
+         y = image.offsetTop;
+      }
+      treeWin.scroll(0, y - 20);
+   }
+}
+
+
+function doSearch(searchString) {
+   if (searchString == null || searchString == "") {
+      alert(msgEmptySearch);
+   } else {
+      var parms = "action=" + SEARCH + "&search=" + escape(escape(searchString));
+      var extraParms = getAdditionalParameters();
+      if (extraParms != null) {
+         parms = parms + "&" + extraParms;
+      }
+      if (selectedId != null) {
+         parms = parms + "&" + SELECTED_PARM + "=" + selectedId;
+      }
+      var newLoc = _upto(treeWin.document.URL, "?") + "?" + parms;
+      treeWin.document.location = newLoc;
+   }
+}
+
+
+function doExpandAll() {
+   if (selectedId == null) {
+      alert(msgNothingSelected);
+   } else if (type == 'S') {
+      alert(msgNotSiteAction);
+   } else {
+      reloadTreeDoc(EXPAND_ALL);
+   }
+}
+
+
+function doCollapseAll() {
+   if (selectedId == null) {
+      alert(msgNothingSelected);
+   } else {
+      reloadTreeDoc(COLLAPSE_ALL);
+   }
+}
+
+
+function doNarrow() {
+   if (selectedId == null) {
+      alert(msgNothingSelected);
+   } else {
+      reloadTreeDoc(NARROW);
+   }
+}
+
+
+function doWiden() {
+   reloadTreeDoc(WIDEN);
+}
+
+
+function doWidenAll() {
+   reloadTreeDoc(WIDEN_ALL);
+}
+
+
+function doAdd() {
+   if (selectedId == null) {
+      alert(msgNothingSelected);
+   } else {
+      reloadTreeDoc(ADD);
+   }
+}
+
+
+function doDelete() {
+   if (selectedId != null) {
+      // If confirmDelete() is implemented, call it before deleting.
+      var isConfirmed = true;
+      if (confirmDelete != null) {
+         isConfirmed = confirmDelete();
+      }
+      if (isConfirmed) {
+         reloadTreeDoc(DELETE, true);
+         // Blank out the current selection fields.  Make the user reselect.
+         selectedId = null;
+         type       = null;
+         parentId   = null;
+         parentType = null;
+         isDisabled = false;
+      }
+   } else {
+      alert(msgNothingSelected);
+   }
+}
+
+
+function doMoveUp() {
+   _doMove(UP)
+}
+
+
+function doMoveDown() {
+   _doMove(DOWN);
+}
+
+
+function _doMove(direction) {
+   if (selectedId == null) {
+      alert(msgNothingSelected);
+   } else {
+      if (parentId != null) {
+         reloadTreeDoc(direction);
+      }
+   }
+}
+
+
+function reloadTreeDoc(action) {
+
+   if (action.length < 3 || action.substr(0,3) != "add") {
+      // Reset the last node added variables
+      nodeAdded(null, null, null, null, false);
+   }
+
+   var parms = ACTION_PARM + "=" + action;
+   if (selectedId != null) {
+      parms = parms + "&" + SELECTED_PARM + "=" + selectedId;
+   }
+   if (type != null) {
+      parms = parms + "&" + TYPE_PARM + "=" + type;
+   }
+   if (parentId != null) {
+      parms = parms + "&" + PARENT_PARM + "=" + parentId;
+   }
+   if (parentType != null) {
+      parms = parms + "&" + PARENT_TYPE_PARM + "=" + parentType;
+   }
+   var extraParms = getAdditionalParameters();
+   if (extraParms != null) {
+      parms = parms + "&" + extraParms;
+   }
+
+   var newLoc = _upto(treeWin.document.URL, "?") + "?" + parms;
+   treeWin.location = newLoc;
+}
+
+
+function _upto(mainString, searchString) {
+   // Return the front part of the mainString prior to the searchString
+   var offset = mainString.indexOf(searchString);
+   if (offset == -1) {
+      return mainString;
+   } else {
+      return mainString.substring(0,offset);
+   }
+}
+
+
+function _uptoLast(mainString, searchString) {
+   // Return the front part of the mainString prior to the searchString
+   var offset = mainString.lastIndexOf(searchString);
+   if (offset == -1) {
+      return mainString;
+   } else {
+      return mainString.substring(0,offset);
+   }
+}
+
+Pˆu…      YùπûYùπû>˝˜Zt¨ê   <    :http://ilearning.oracle.com/ilearn/en/shared/js/htmltree.js necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 23 Aug 2017 10:21:34 GMT
+Server: Oracle-Application-Server-10g
+Last-Modified: Mon, 04 Mar 2013 02:05:06 GMT
+Accept-Ranges: bytes
+Content-Length: 12038
+Content-Type: application/x-javascript
+ uncompressed-len 0   /

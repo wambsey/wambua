@@ -1,0 +1,170 @@
+.FirstStyleIsIgnored	{ background-color:#FFFFFF; }
+
+.ovrbtn 		{ cursor:pointer; cursor:hand }
+
+.clrback		{ background-color:#FFFFFF; }
+.CoreVeryDark  		{ background-color:#003366; }
+.CoreDark   		{ background-color:#9EC3E0; }
+.CoreMedium 		{ background-color:#6699CC; }
+.CoreLight  		{ background-color:#99CCFF; }
+
+.tabOffColor 		{ background-color:#F2F2F4; }
+
+.AccentVeryDark		{ background-color:#336699; }
+.AccentDark  		{ background-color:#9EC3E0; }
+.CatalogBinStyle	{ background-color:#F2F2F4; }
+.SearchBinStyle		{ background-color:#F2F2F4; }
+.LoginBinStyle          { background-color:#F2F2F4; } 
+.AccentMedium  		{ background-color:#FFFFCC; }
+.AccentLight   		{ background-color:#F2F2F4; }
+.CalendarHeaderStyle    { background-color:#9EC3E0; }
+.CalendarInteriorStyle  { background-color:#F2F2F4; }
+.CalendarBinStyle       { background-color:#F2F2F4; }
+
+.ExtraVeryDark  	{ background-color:#333333; }
+.ExtraDark      	{ background-color:#666666; }
+.ExtraMedium    	{ background-color:#999999; }
+.ExtraLight     	{ background-color:#CCCCCC; }
+
+.HeaderLine 		{ background-image:url("../../shared/img/header_line_back.gif"); background-color:#FFFFFF; }
+.BottomLine 		{ background-image:url("../../shared/img/bottom_strip_back.gif"); background-color:#FFFFFF; }
+.SeparatorLine 		{ background-image:url("../../shared/img/separator.gif"); background-color:#FFFFFF; }
+.ButtonBack 		{ background-image:url("../../shared/img/btn_middle_back.gif"); }
+.TopShadow 		{ background-image:url("../../shared/img/top_shadow_back.gif"); background-color:#FFFFFF; }
+.LeftShadow 		{ background-image:url("../../shared/img/left_shadow_back.gif"); background-color:#F2F2F4; }
+.SearchHeader 		{ background-image:url("../../shared/img/search_shadow_back.gif"); background-color:#F2F2F4; }
+.VisitedLine 		{ background-image:url("../../shared/img/train_line_visited.gif"); }
+.ActiveLine		{ background-image:url("../../shared/img/train_line_active.gif"); }
+.TableColumnSeparator   { background-image:url("../../shared/img/table_column_separator.gif"); }
+.SearchBinTopBack       { background-image:url("../../shared/img/search_bin_back.gif"); }
+.TableSorterBack	{ background-image:url("../../shared/img/header_sort_back.gif"); }
+.subTabStepBack		{ background-image:url("../../shared/img/subtab_step_back.gif"); background-color:#FFFFFF; }
+
+
+.TableHorizontalBottomBack	{ background-image:url("../../shared/img/table_horizontal_bottom_back.gif"); }
+.TableVerticalBack 	{ background-image:url("../../shared/img/table_vertical_back.gif"); }
+.TableVerticalRightBack	{ background-image:url("../../shared/img/table_end_column.gif"); }
+
+
+.PlayerBack		{ background-image: url("../../shared/img/player_back.gif"); }
+.PlayerBackColor	{ background-color: #336699; }
+.PlayerResourceTitle {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:12pt;color:#336699;font-weight:bold}
+.PlayerRcoTitle     {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:12pt;color:#384CAD;font-weight:bold}
+.PlayerRco          {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:#000066}
+.PlayerRcoSelected  {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:#FFFFFF; font-weight:bold; background-color:#336699;}
+.PlayerRcoDisabled  {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:#606060;}
+.PlayerRcoSelectedDisabled  {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:#999999;}
+.PlayerText         { font-family:Arial, Helvetica, Geneva, sans-serif; color:#384CAD; font-size:10pt; font-style: normal; font-weight: bold; text-decoration: none; }
+.PlayerTextSelected	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#FFFFFF; font-size:9pt; font-weight: bold; text-decoration: none; }
+.PlayerTextSmall		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#CCCC99; font-size:7pt; font-style: normal; text-decoration: none; }
+.PlayerTextSelectedSmall	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#FFFFFF; font-size:7pt; font-weight: bold; text-decoration: none; }
+.PlayerInverseText		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; font-size:9pt; font-style: normal; text-decoration: none; }
+.PlayerInverseTextSmall		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; font-size:7pt; font-style: normal; text-decoration: none; }
+.PlayerOutline       { background-color:#9EC3E0; }
+
+.trainnodevisited 	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#CCCC99; font-size:9pt; }
+.trainnodeactive 	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; font-size:9pt; font-weight:bold; }
+.trainnodenext	 	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; font-size:9pt; }
+
+.chatnormal		{ background-color:#FFFFFF; }
+.fntchatuser 	  	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#666600; font-size:10pt; font-weight:bold; }
+.fntchattime 	  	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#666600; font-size:8pt; font-weight:bold; }
+.fntchatmsg 	  	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#666600; font-size:10pt; font-weight:bold; }
+
+.chatnormalalt		{ background-color:#F7F7E7; }
+.fntchatuseralt 	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#CC0000; font-size:10pt; font-weight:bold; }
+.fntchattimealt 	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#CC0000; font-size:8pt;  font-weight:bold;}
+.fntchatmsgalt	 	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#CC0000; font-size:10pt; font-weight:bold; }
+
+.chatprivate		{ background-color:#003366; }
+.fntchatprivateuser 	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#FFFFFF; font-size:10pt; font-weight:bold; font-style:italic; }
+.fntchattimeprivate	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#FFFFFF; font-size:8pt; font-weight:bold; font-style:italic; }
+.fntchatprivatemsg 	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#FFFFFF; font-size:10pt; font-weight:bold; font-style:italic; }
+
+.fntchatthisuser 	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; font-size:10pt; font-weight:bold; }
+.fntchattimethis	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; font-size:8pt; font-weight:bold; }
+.fntchatthisusermsg 	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; font-size:10pt; font-weight:bold; }
+
+.clrbinback	 	{ background-color:#FFFFFF; }
+.clrbinheader    	{ background-color:#6699CC; }
+.fntbinheader		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; text-decoration:none; font-size:12pt; font-weight:bold;}
+.fntbinheadersmall     	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; text-decoration:none; font-size:8pt; }
+.fntbinaccent		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#2B7C92; text-decoration:none; font-size:18pt; font-weight:bold; font-style:italic; }
+
+.fntnameprompt		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; text-decoration:none; font-size:12pt; }
+.fntprompt		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; text-decoration:none; font-size:8pt; }
+.tableRange   		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; font-size:10pt;  }
+.prevNextDis	  	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#C0C0C0; font-size:10pt;  }
+
+.fnttabon 		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#234A82; text-decoration:none; font-size:12pt; font-weight:bold; }
+.fnttaboff  		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#234A82; text-decoration:none; font-size:11pt; }
+.fnttabdisabled		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#999999; text-decoration:none; font-size:11pt; }
+
+.fntsubtabon 		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#234A82; text-decoration:none; font-size:12pt; font-weight:bold; }
+.fntsubtaboff  		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#234A82; text-decoration:none; font-size:10pt; }
+.fntsubtabdisabled	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#999999; text-decoration:none; font-size:10pt; }
+
+.fntcenterbody       	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#003363; text-decoration:none; font-size:10pt; }
+.fntcentersmall      	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#003363; text-decoration:none; font-size:8pt; }
+.fntcentersmallbold    	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#003363; text-decoration:none; font-size:8pt; font-weight:bold; }
+
+.TextPromptsLabels  	{ font-family:Arial, Helvetica, Geneva, sans-serif;  color:#000000; font-size:10pt; }
+.TextData	    	{ font-family:Arial, Helvetica, Geneva, sans-serif;  color:#000000; font-size:10pt; font-weight:bold; }
+
+.InstructionText   	{ font-family:Verdana, Arial, Helvetica, Geneva, sans-serif; color:#000000; font-size:8pt;  }
+.BoldInstructionText   	{ font-family:Verdana, Arial, Helvetica, Geneva, sans-serif; color:#000066; font-size:8pt; font-weight:bold; }
+.ButtonText	   	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#003363; text-decoration:none; font-size:10pt;   }
+.ButtonTextDisabled   	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#606060; text-decoration:none; font-size:10pt;   }
+
+.smLinkText 	  	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#2B7C92; font-size:8pt; text-decoration:none;  }
+.LinkText 	  	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#2B7C92; font-size:10pt; text-decoration:underline;  }
+.LinkTextNone  { font-family:Arial, Helvetica, Geneva, sans-serif; color:#663300; font-size:10pt; text-decoration:none; }
+.BlackLinkText		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#000000; font-size:10pt;  }
+.RollActiveText 	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; font-size:10pt;  }
+.vLinkText		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#2B7C92; font-size:10pt;  }
+.aLinkText		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#ff6600; font-size:10pt;  }
+.TipText		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#000066; font-size:10pt; font-weight:bold; }
+
+.breadcrumb 	  	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#2B7C92; font-size:9pt;  text-decoration:underline; }
+.breadcrumbHilite 	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#2B7C92; font-size:9pt;  }
+
+.quicklink	  	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#663300; font-size:9pt;  }
+.quicklinkHilite 	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#000000; font-size:9pt;  }
+
+.Header			{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; font-size:16pt;  font-weight:bold;  text-decoration:none;}
+.HeaderAlt		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#000000; font-size:16pt;  text-decoration:none;}
+.Subheader		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; font-size:14pt;  font-weight:bold; text-decoration:none;}
+.SubsubHeader		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; font-size:11pt;  font-weight:bold; text-decoration:none;}
+
+.HeaderAccentDark 		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#003366; font-size:16pt; text-decoration:none;}
+.SubheaderAccentDark		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; font-size:14pt; font-weight:bold; text-decoration:none;}
+.SubsubHeaderAccentDark 	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#000000; font-size:10pt; font-weight:bold; text-decoration:none;}
+.HeaderAccentLight		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#6699cc; font-size:16pt; text-decoration:none;}
+.SubheaderAccentLight		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#6699cc; font-size:14pt; font-weight:bold; text-decoration:none;}
+.SubsubHeaderAccentLight 	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#6699cc; font-size:11pt; font-weight:bold; text-decoration:none;}
+.HeaderCoreMedium		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#ffffcc; font-size:16pt; text-decoration:none;}
+.SubheaderCoreMedium		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#ffffcc; font-size:14pt; font-weight:bold; text-decoration:none;}
+.SubsubheaderCoreMedium		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#ffffcc; font-size:11pt; font-weight:bold; text-decoration:none;}
+
+.ErrorHeader		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#cc0000; font-size:16pt;  text-decoration:none;}
+.ErrorNameText		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#cc0000; font-size:10pt;  font-weight:bold; text-decoration:none;}
+.ErrorText		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#000000; font-size:10pt;  text-decoration:none;}
+.ErrorTextInline	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#cc0000; font-size:8pt; }
+
+.TableText 	  	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#000000; font-size:10pt;  }
+.InlineInfoText		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; font-size:8pt; }
+.TableColumnHeader	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#336699; font-size:10pt; }
+.TableCellText		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#2B7C92; font-size:10pt; }
+.BoldTableCellText	{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#2B7C92; font-size:10pt; font-weight:bold; text-decoration:underline; }
+.CertificateFieldText           { font-family:Arial, Helvetica, Geneva, sans-serif; color:#000000; font-size:10pt; }
+.CertificateDataText            { font-family:Arial, Helvetica, Geneva, sans-serif; font-weight:bold; color:#000000; font-size:10pt; text-align:left; }
+.CertificateCopyright           { font-family:Arial, Helvetica, Geneva, sans-serif; color:#000000; font-size:8pt; text-align:left; }
+.HiddenLabel  {position:absolute;left:0px;top:-500px;width:1px;height:1px;overflow:hidden;}ù>¨ì™+      
+Y∞V®Y∞V®>*‰÷Zt¨Ê   K    :http://ilearning.oracle.com/ilearn/en/learner/css/learner.css?lmd=10092002 necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 23 Aug 2017 10:22:49 GMT
+Server: Oracle-Application-Server-10g
+Last-Modified: Mon, 04 Mar 2013 02:04:37 GMT
+Accept-Ranges: bytes
+Content-Length: 14058
+Content-Type: text/css
+ uncompressed-len 0   6Í

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" class="no-js" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Coast Bus (Msa) Ltd | Passenger Services</title>
+	<meta name="description" content="">
+	
+	<!-- CSS FILES -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" data-name="skins">
+    <link rel="stylesheet" href="css/layout/wide.css" data-name="layout">
+
+    <link rel="stylesheet" href="css/fractionslider.css"/>
+    <link rel="stylesheet" href="css/style-fraction.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/switcher.css" media="screen" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<!--Start Header-->
+	<header id="header" class="clearfix">
+        <div id="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 hidden-xs top-info">
+                        <span><i class="fa fa-phone"></i>Phone: (+254) 722-206-446</span>
+                        <span><i class="fa fa-envelope"></i>Email: coast@coastbus.com</span>
+                    </div>
+                    <div class="col-sm-5 top-info">
+                        <ul>
+                            <li><a href="https://twitter.com/coastpekee" class="my-tweet"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/coastbusmsa" class="my-facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="" class="my-skype"><i class="fa fa-skype"></i></a></li>
+                            <li><a href="" class="my-pint"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="" class="my-rss"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="" class="my-google"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LOGO bar -->
+       <div id="logo-bar" class="clearfix">
+           <!-- Container -->
+           <div class="container">
+               <div class="row">
+                   <!-- Logo / Mobile Menu -->
+                   <div class="col-xs-12">
+                       <div id="logo">
+                           <h1><a href="index.html"><img src="images/hd2.png" alt="C.B.L" /></a></h1>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!-- Container / End -->
+       </div>
+        <!--LOGO bar / End-->
+
+        <!-- Navigation
+================================================== -->
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Home</a>
+
+                            <li><a href="#">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="service.html">Passengers Services</a></li>
+                                    <li><a href="courier.html">Courier Service</a></li>
+                                    <li><a href="carhire.html">Car Hire</a></li>
+                                    <li><a href="routes.html">Our Routes</a></li>
+                                    <li><a href="price.html">Our Prices</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Quick Links</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    <li><a href="services.html">Archives</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Gallery</a>
+                                <ul class="dropdown-menu">
+<li class="active"><a href="coastbus.html">Coastbus Gallery</a></li>
+                                    <li><a href="motor.html">Motor Sports</a></li>
+                                    <li>
+                                        <a href="archives.html">Archives</a>                                   <li>
+                                       <ul class="dropdown-menu">
+                                           
+                                      
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="news.html">News</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">Current</a></li>
+                                    <li><a href="">Archives</a></li>
+                                    <li><a href="">Otherst</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div><!--/.row -->
+            </div><!--/.container -->
+        </div>
+	</header>
+	<!--End Header-->
+	
+	<!--start wrapper-->
+	<section class="wrapper">
+		<section class="page_head">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<h2>Passenger Services</h2>
+						<nav id="breadcrumbs">
+							<ul>
+								<li>You are here:</li>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="index.html">Passenger Services</a></li>
+								<li>Our Services</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="content">
+			<div class="container">
+				<div class="row sub_content">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="dividerHeading">
+							<h4><span>Public Service Vehicle</span></h4>
+
+						</div>
+						<p>We provide public transportation for passengers to different areas in the country. Our buses have a national wide reach ensuring that you as a paseenger reaches your destination</p>
+					</div>
+				
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		
+		<section class="promo_box"></section>
+	</section>
+	<!--end wrapper-->
+
+	<!--start footer--><!--end footer-->
+	
+	<section class="footer_bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 ">
+                    <p class="copyright">¬© Copyright 2015 Coast Bus (Msa) Ltd | |<a href="http://www.jqueryrain.com/"></a></p>
+				</div>
+				
+				<div class="col-lg-6 ">
+					<div class="footer_social">
+						<ul class="footbot_social">
+							<li><a class="fb" href="https://www.facebook.com/coastbusmsa" data-placement="top" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a class="twtr" href="https://twitter.com/coastpekee" data-placement="top" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a class="instagram" href="#." data-placement="top" data-toggle="tooltip" title="instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a class="skype" href="#." data-placement="top" data-toggle="tooltip" title="Skype"><i class="fa fa-skype"></i></a></li>
+							<li><a class="rss" href="#." data-placement="top" data-toggle="tooltip" title="RSS"><i class="fa fa-rss"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/retina-1.1.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script> <!-- jQuery cookie -->
+    <script type="text/javascript" src="js/styleswitch.js"></script> <!-- Style Colors Switcher -->
+    <script type="text/javascript" src="js/jquery.smartmenus.min.js"></script>
+    <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/jflickrfeed.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/swipe.js"></script>
+    <script type="text/javascript" src="js/jquery-scrolltofixed-min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <!-- Start Style Switcher -->
+    <div class="switcher"></div>
+    <!-- End Style Switcher -->
+</body>
+</html>
+ìm∏˘•ª      YúìèYúìê>2#Yúìè   %    :http://www.coastbus.com/service.html necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Tue, 22 Aug 2017 13:26:48 GMT
+Content-Type: text/html
+Content-Length: 9968
+Server: Apache/2
+Last-Modified: Mon, 29 Jun 2015 11:06:35 GMT
+Etag: "26f0-519a6154315c4"
+Accept-Ranges: bytes
+Cache-Control: max-age=3600
+Expires: Tue, 22 Aug 2017 14:26:48 GMT
+Age: 0
+ charset windows-1252 uncompressed-len 0 predictor::resource-count 29 predictor::http://www.coastbus.com/css/bootstrap.min.css 1,1,1503433615,0 predictor::http://www.coastbus.com/css/style.css 1,1,1503433615,0 predictor::http://www.coastbus.com/css/layout/wide.css 1,1,1503433615,0 predictor::http://www.coastbus.com/css/fractionslider.css 1,1,1503433615,0 predictor::http://www.coastbus.com/css/style-fraction.css 1,1,1503433615,0 predictor::http://www.coastbus.com/css/switcher.css 1,1,1503433615,0 predictor::http://www.coastbus.com/js/jquery-1.10.2.min.js 1,1,1503433615,0 predictor::http://www.coastbus.com/js/bootstrap.min.js 1,1,1503433615,0 predictor::http://www.coastbus.com/js/jquery.easing.1.3.js 1,1,1503433615,0 predictor::http://www.coastbus.com/js/retina-1.1.0.min.js 1,1,1503433615,0 predictor::http://www.coastbus.com/js/jquery.cookie.js 1,1,1503433615,0 predictor::http://www.coastbus.com/js/styleswitch.js 1,1,1503433615,0 predictor::http://www.coastbus.com/js/jquery.smartmenus.min.js 1,1,1503433615,0 predictor::http://www.coastbus.com/js/jquery.smartmenus.bootstrap.min.js 1,1,1503433615,0 predictor::http://www.coastbus.com/js/jquery.jcarousel.js 1,1,1503433615,0 predictor::http://www.coastbus.com/js/jflickrfeed.js 1,1,1503433615,0 predictor::http://www.coastbus.com/js/jquery.magnific-popup.min.js 1,1,1503433615,0 predictor::http://www.coastbus.com/js/jquery.isotope.min.js 1,1,1503433615,0 predictor::http://www.coastbus.com/js/swipe.js 1,1,1503433615,0 predictor::http://www.coastbus.com/js/jquery-scrolltofixed-min.js 1,1,1503433615,0 predictor::http://www.coastbus.com/js/main.js 1,1,1503433615,0 predictor::http://www.coastbus.com/images/hd2.png 1,1,1503433615,0 predictor::http://www.coastbus.com/css/font-awesome.css 1,1,1503433615,0 predictor::http://www.coastbus.com/css/magnified.css 1,1,1503433615,0 predictor::http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700 1,1,1503433615,0 predictor::http://fonts.googleapis.com/css?family=Lato:400,300,700 1,1,1503433615,0 predictor::http://fonts.googleapis.com/css?family=PT+Sans:400,700 1,1,1503433615,0 predictor::http://www.coastbus.com/images/breadcrumbs.png 1,1,1503433615,0 predictor::http://www.coastbus.com/css/icons/switcher.png 1,1,1503433615,0   &

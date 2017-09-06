@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///media/andrew/New%20Volume/icta/Oracle%20Training/Linux%20Sys%20Admin/D88168GC10_sg1.pdf" added="2017-08-22T19:22:15Z" modified="2017-08-22T19:22:16Z" visited="2017-08-22T19:22:15Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;evince %U&apos;" modified="2017-08-22T19:22:15Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2017-08-22T19:22:16Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/andrew/New%20Volume/my%20docs/sec.txt" added="2017-08-23T17:17:25Z" modified="2017-08-23T17:17:25Z" visited="2017-08-23T17:17:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2017-08-23T17:17:25Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/andrew/Desktop/Git.html" added="2017-09-06T20:56:24Z" modified="2017-09-06T20:56:24Z" visited="2017-09-06T20:56:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Leafpad" exec="&apos;leafpad %u&apos;" modified="2017-09-06T20:56:24Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

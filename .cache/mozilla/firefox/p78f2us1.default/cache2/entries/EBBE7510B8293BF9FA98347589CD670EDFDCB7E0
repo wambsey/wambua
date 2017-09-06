@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" class="no-js" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Coast Bus (Msa) Ltd | Home</title>
+	<meta name="description" content="">
+	
+	<!-- CSS FILES -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" data-name="skins">
+    <link rel="stylesheet" href="css/layout/wide.css" data-name="layout">
+
+    <link rel="stylesheet" href="css/fractionslider.css"/>
+    <link rel="stylesheet" href="css/style-fraction.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/switcher.css" media="screen" />
+
+</head>
+<body>
+	<!--Start Header-->
+	<header id="header" class="clearfix">
+        <div id="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 hidden-xs top-info">
+                        <span><i class="fa fa-phone"></i>Mombasa: (+254) 722-206-445</span>
+                        <span><i class="fa fa-phone"></i>Nairobi: (+254) 722-206-448</span>
+                        <span><i class="fa fa-envelope"></i>Email: coast@coastbus.com</span>
+                    </div>
+                    <div class="col-sm-5 top-info">
+                        <ul>
+                            <li><a href="https://twitter.com/coastpekee" class="my-tweet"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.facebook.com/coastbusmsa" class="my-facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="" class="my-skype"><i class="fa fa-skype"></i></a></li>
+                            <li><a href="" class="my-pint"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="" class="my-rss"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="" class="my-google"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LOGO bar -->
+       <div id="logo-bar" class="clearfix">
+           <!-- Container -->
+           <div class="container">
+               <div class="row">
+                   <!-- Logo / Mobile Menu -->
+                   <div class="col-xs-12">
+                       <div id="logo">
+                           <h1><a href="index.html"><img src="images/hd2.png" alt="C.B.L" /></a></h1>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <!-- Container / End -->
+       </div>
+        <!--LOGO bar / End-->
+
+        <!-- Navigation
+================================================== -->
+        <div class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Home</a>
+
+                            <li><a href="#">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="service.html">Passengers Services</a></li>
+                                    <li><a href="courier.html">Courier Service</a></li>
+                                    <li><a href="carhire.html">Car Hire</a></li>
+                                    <li><a href="routes.html">Our Routes</a></li>
+                                    <li><a href="price.html">Our Prices</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Quick Links</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    <li><a href="services.html">Archives</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li><a href="#">Gallery</a>
+                                <ul class="dropdown-menu">
+<li class="active"><a href="coastbus.html">Coastbus Gallery</a></li>
+                                    <li><a href="motor.html">Motor Sports</a></li>
+                                    <li>
+                                        <a href="archives.html">Archives</a>                                   <li>
+                                       <ul class="dropdown-menu">
+                                           
+                                      
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="news.html">News</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">Current</a></li>
+                                    <li><a href="">Archives</a></li>
+                                    <li><a href="">Others</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div><!--/.row -->
+            </div><!--/.container -->
+        </div>
+	</header>
+	<!--End Header-->
+
+	<!--start wrapper-->
+	<section class="wrapper">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <div class="fs_loader"></div>
+                <div class="slide">
+                    <!--1- slide background-->
+                    <img src="images/fraction-slider/gadgets/ramadhan.jpg" data-position="-10,650" data-in="bottom" data-delay="500" data-out="fade"  width="600" height="450">                                     <!--3- laptop-->
+
+                    <!-- disable paragraph <p class="para-new" data-position="10,600" data-in="top"  data-out="Right" data-delay="">Welcome to Coast Bus</p> -->
+                </div>
+                <div class="slide">
+                    <img src="images/fraction-slider/fraction_2.png" data-in="fade" data-delay="" data-out="fade" width="1920" height="auto">     <!--2- slide background-->
+
+                    <img src="images/fraction-slider/076a_2.jpg" width="422" height="422" data-position="8,1240" data-in="bottomLeft" data-delay="500" data-out="fade" style="width:auto; height:auto">
+
+                    <p class="claim light-pink" data-position="40,230" data-in="top"  data-out="left" data-delay="1800" data-ease-in="easeOutBounce">we lead, others follow.</p>
+
+                    <p class="teaser turky small" data-position="150,230" data-in="left" data-out="left" data-delay="5500">Reliable & effecient</p>
+
+                    <p class="teaser turky small" data-position="210,230"  data-in="left" data-out="left" data-delay="6500">over 50yrs on kenyan roads</p>
+
+                    <p class="teaser turky small" data-position="270,230" data-in="left" data-out="left" data-delay="8000">Full Onboard Amenities</p>
+
+                    <p class="teaser turky small" data-position="150,670" data-in="right" data-out="right" data-delay="5500">Countrywide Routes</p>
+
+                    <p class="teaser turky small" data-position="210,670" data-in="right" data-out="right" data-delay="6500">We Care</p>
+
+                    <p class="teaser turky small" data-position="270,670" data-in="right" data-out="right" data-delay="8000">24/7 Support</p>
+
+                    <a href=""	class="slider-read" data-position="350,230" data-in="bottom" data-out="Right" data-delay="9500">Lipa Na Mpesa</a>
+                    
+                </div>
+                <div class="slide">
+                    <img src="images/fraction-slider/NEW-7.png" data-in="fade" data-out="fade" width="1920" height="627"/>                                     <!--3- slide background-->
+
+                    <p class="claim light-pink" data-position="30,250" data-in="top" data-out="top" data-ease-in="easeOutBounce" data-delay="1500">Coast Bus (Msa) Ltd</p>
+
+                    <p class="claim  theme-colored" data-position="110,250" data-in="left" data-out="Right" data-delay="2500">We Lead Other, Follow</p>
+
+                    <img src="images/fraction-slider/2buses_2.jpg" width="736" height="333" data-position="103,1180" data-in="bottom" data-out="bottom" data-delay="400">
+                    <div class="para-2"	data-position="200,250" data-in="left" data-out="right" data-delay="3000">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aspernatur consequatur consequuntur debitis
+                        delectus nostrum quam quod reiciendis sit!
+                    </div>
+
+                    <a href="book.html"	class="slider-read" data-position="360,250" data-in="bottom"  data-out="Right" data-delay="3500">Lipa Na Mpesa</a>
+                </div>
+                <div class="slide">
+                    <img src="images/fraction-slider/NEW-7 - Copy.png" data-in="fade" data-out="fade" width="1920" height="auto">         <!--4- slide background-->
+                    <img src="images/fraction-slider/2buses1.jpg" width="656" height="316" data-position="103,1180" data-in="right" data-out="left" data-delay="400">
+
+                    <p class="claim light-pink" data-position="50,1050" data-in="top"  data-out="top" data-ease-in="jswing">On Kenyan Roads,</p>
+
+                    <p class="teaser turky" data-position="120,1180" data-in="left" data-delay="1500">For 56 Years</p>
+
+                    <p class="teaser turky" data-position="170,1180" data-in="left"  data-delay="3000">We Care About You</p>
+
+                    <p class="teaser turky" data-position="220,1180" data-in="left"  data-delay="4500" data-out="none">Experience First Class Service</p>
+
+                    <p class="teaser turky" data-position="270,1180" data-in="left" data-delay="5500" data-out="none">When Travelling</p>
+                    <a href=""	class="slider-read" data-position="340,1330" data-in="bottom" data-out="top" data-delay="6500">Lipa Na Mpesa</a>
+                </div>
+            </div>
+        </div>
+		<!--End Slider-->
+		
+		<!--start info service-->
+		<section class="info_service">
+			<div class="container">
+				<div class="row sub_content">
+					<div class="rs_box">
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<div class="serviceBox_1">
+								<div class="icon_service">
+									<i class="fa fa-laptop"></i>
+									<h3>Lipa Na Mpesa</h3>
+								</div>
+								<div class="fr_content">
+									<p>We have introduced several options to book from the comfort of your home or from whichever location you are, e.g Lipa Na Mpesa, online booking.</p>
+									<a class="read" href="book.html"><script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
+<div id="SkypeButton_Call_coast.bus1_1">
+  <script type="text/javascript">
+    Skype.ui({
+      "name": "dropdown",
+      "element": "SkypeButton_Call_coast.bus1_1",
+      "participants": ["coast.bus1"],
+      "imageSize": 16
+    });
+  </script>
+</div></a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<div class="serviceBox_1">
+								<div class="icon_service">
+									<i class="fa fa-heart"></i>
+									<h3>We Care</h3>
+								</div>
+								<div class="fr_content">
+									<p>We have the most comfortable buses on the kenyan roads with lots of legroom to ensure that you reach your destination fully relaxed.</p>
+									<a class="read" href="#">Read more</a>
+								</div>
+							</div>
+						</div>	
+
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<div class="serviceBox_1">
+								<div class="icon_service">
+									<i class="fa fa-trophy"></i>
+									<h3>No 1 Bus countrywide</h3>
+								</div>
+								<div class="fr_content">
+									<p>Coast Bus has been the leading public bus transporter for the past 56 years in Kenya,</p>
+									<a class="read" href="#">Read more</a>
+								</div>
+							</div>
+						</div>	
+					
+					</div>
+				</div>
+                <div class="row sub_content">
+					<div class="rs_box">
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<div class="serviceBox_1">
+								<div class="icon_service">
+                                    <i class="fa fa-gear"></i>
+									<h3>Sleeping Coach</h3>
+								</div>
+								<div class="fr_content">
+									<p>Coast Bus is the first sleeping coach in the eastern africa region with the largest seats to provide you with a luxurious travelling exeperience</p>
+									<a class="read" href="#">Read more</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<div class="serviceBox_1">
+								<div class="icon_service">
+                                    <i class="fa fa-volume-off"></i>
+									<h3>Full Amenities</h3>
+								</div>
+								<div class="fr_content">
+									<p>Our buses are fitted with Air Conditioning, high speed internet connection via wifi and power outlets to charge your devices on the go</p>
+									<a class="read" href="#">Read more</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<div class="serviceBox_1">
+								<div class="icon_service">
+                                    <i class="fa fa-suitcase"></i>
+									<h3>Comfort</h3>
+								</div>
+								<div class="fr_content">
+									<p>We have the most comfortable buses on the kenyan roads with lots of legroom to ensure that you reach your destination fully relaxed.</p>
+									<a class="read" href="#">Read more</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--end info service-->
+
+		<!--Start recent work-->
+		<section class="latest_work">
+			<div class="container">
+				<div class="row sub_content">
+					<div class="carousel-intro">
+						<div class="col-md-12">
+							<div class="dividerHeading">
+							  <h4><span>Coast Air</span></h4>
+							</div>
+							<div class="carousel-navi">
+								<div id="work-prev" class="arrow-left jcarousel-prev"><i class="fa fa-angle-left"></i></div>
+								<div id="work-next" class="arrow-right jcarousel-next"><i class="fa fa-angle-right"></i></div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					
+					<div class="jcarousel recent-work-jc">
+                        <ul class="jcarousel-list">
+                            <!-- Recent Work Item -->
+                            <li class="col-sm-3 col-md-3 col-lg-3">
+                                <div class="recent-item">
+                                    <figure>
+                                        <div class="touching medium">
+                                            <img src="images/portfolio/portfolio_1.png" alt="" />
+                                        </div>
+                                        <div class="option">
+                                            <a href="images/portfolio/full/portfolio_1.png" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
+                                            <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
+                                        </div>
+                                        <figcaption class="item-description">
+                                            <h5>Coast Air</h5>
+                                            <span>Luxury</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </li>
+
+                            <!-- Recent Work Item -->
+                            <li class="col-sm-3 col-md-3 col-lg-3">
+                                <div class="recent-item">
+                                    <figure>
+                                        <div class="touching medium">
+                                            <img src="images/portfolio/portfolio_1_1.png" alt="" />
+                                        </div>
+                                        <div class="option">
+                                            <a href="images/portfolio/full/portfolio_2.png" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
+                                            <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
+                                        </div>
+                                        <figcaption class="item-description">
+                                            <h5>Coast Air </h5>
+                                            <span>Interior</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </li>
+
+                            <!-- Recent Work Item -->
+                            <li class="col-sm-3 col-md-3 col-lg-3">
+                                <div class="recent-item">
+                                    <figure>
+                                        <div class="touching medium">
+                                            <img src="images/portfolio/portfolio_1_2.png" alt="" />
+                                        </div>
+                                        <div class="option">
+                                            <a href="images/portfolio/full/portfolio_3.png" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
+                                            <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
+                                        </div>
+                                        <figcaption class="item-description">
+                                            <h5>Coast Air Hostess</h5>
+                                            <span>AT your Service</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </li>
+
+                            <!-- Recent Work Item -->
+                            <li class="col-sm-3 col-md-3 col-lg-3">
+                                <div class="recent-item">
+                                    <figure>
+                                        <div class="touching medium">
+                                            <img src="images/portfolio/portfolio_1_5.png" alt="" />
+                                        </div>
+                                        <div class="option">
+                                            <a href="images/portfolio/full/portfolio_5.png" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
+                                            <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
+                                        </div>
+                                        <figcaption class="item-description">
+                                            <h5>Comfy</h5>
+                                            <span>More Leg Room</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </li>
+
+                            <!-- Recent Work Item -->
+                            <li class="col-sm-3 col-md-3 col-lg-3">
+                                <div class="recent-item">
+                                    <figure>
+                                        <div class="touching medium">
+                                            <img src="images/portfolio/logo small.png" alt="" />
+                                        </div>
+                                        <div class="option">
+                                            <a href="images/portfolio/full/logo big.png" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
+                                            <a href="" class="hover-link"><i class="fa fa-link"></i></a>
+                                        </div>
+                                        <figcaption class="item-description">
+                                            <h5>We Lead</h5>
+                                            <span>Others Follow</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </li>
+
+                            <!-- Recent Work Item -->
+                            <li class="col-sm-3 col-md-3 col-lg-3">
+                                <div class="recent-item">
+                                    <figure>
+                                        <div class="touching medium">
+                                            <img src="images/portfolio/portfolio_5.png" alt="" />
+                                        </div>
+                                        <div class="option">
+                                            <a href="images/portfolio/full/portfolio_1.png" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
+                                            <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
+                                        </div>
+                                        <figcaption class="item-description">
+                                            <h5>Touch and Swipe</h5>
+                                            <span>Technology</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </li>
+
+                            <!-- Recent Work Item -->
+                            <li class="col-sm-3 col-md-3 col-lg-3">
+                                <div class="recent-item">
+                                    <figure>
+                                        <div class="touching medium">
+                                            <img src="images/portfolio/portfolio_2.png" alt="" />
+                                        </div>
+                                        <div class="option">
+                                            <a href="images/portfolio/full/portfolio_7.png" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
+                                            <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
+                                        </div>
+                                        <figcaption class="item-description">
+                                            <h5>Touch and Swipe</h5>
+                                            <span>Technology</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </li>
+
+                            <!-- Recent Work Item -->
+                            <li class="col-sm-3 col-md-3 col-lg-3">
+                                <div class="recent-item">
+                                    <figure>
+                                        <div class="touching medium">
+                                            <img src="images/portfolio/portfolio_3.png" alt="" />
+                                        </div>
+                                        <div class="option">
+                                            <a href="images/portfolio/full/portfolio_8.png" class="hover-zoom mfp-image" ><i class="fa fa-search"></i></a>
+                                            <a href="portfolio_single.html" class="hover-link"><i class="fa fa-link"></i></a>
+                                        </div>
+                                        <figcaption class="item-description">
+                                            <h5>Touch and Swipe</h5>
+                                            <span>Technology</span>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </li>
+                        </ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Start recent work-->
+		
+		<section class="fetaure_bottom">
+			<div class="container">
+				<div class="row sub_content">
+					<div class="col-lg-6 ">
+						<div class="dividerHeading">
+							<h4><span>Booking Offices</span></h4>
+
+						</div>
+						<ul class="list_style circle">
+							<li><a href="book.html"><i class="fa fa-angle-right"></i> Head Office, Changamwe (Msa)</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Mwembe Tayari Booking Office (Msa)</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Nairobi Booking Office (River road)</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Nairobi Booking Office (South C)</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Kisumu Booking Office</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Kakamega Booking Office</a></li>
+							<li><a href="#"><i class="fa fa-angle-right"></i> Mumias Booking Office</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Bungoma Booking Office</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Kitui Booking Office</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Voi Booking Office</a></li>
+						</ul>
+					</div>
+					
+					<!-- TESTIMONIALS --><!-- TESTIMONIALS END -->
+				</div>
+			</div>
+		</section>
+		<section class="clients">
+			<div class="container">
+				<div class="row sub_content"></div>
+			</div>
+		</section>
+	    <!--end wrapper-->
+	
+        <section class="promo_box">
+            <div class="container">
+                <div class="row"></div>
+            </div>
+        </section>
+    </section>
+
+    <!--start footer--><!--end footer-->
+	
+	<section class="footer_bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 ">
+                    <p class="copyright">Â© Copyright 2015 Coast Bus (Msa) Ltd | |<a href="http://www.jqueryrain.com/"></a></p>
+				</div>
+				
+				<div class="col-lg-6 ">
+					<div class="footer_social">
+						<ul class="footbot_social">
+							<li><a class="fb" href="https://www.facebook.com/coastbusmsa" data-placement="top" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a class="twtr" href="https://twitter.com/coastpekee" data-placement="top" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a class="instagram" href="http://ink361.com/app/users/ig-238328340/coastbuskenya/photos" data-placement="top" data-toggle="tooltip" title="instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a class="skype" href="" data-placement="top" data-toggle="tooltip" title="Skype"><i class="fa fa-skype"></i></a></li>
+							<li><a class="rss" href="#." data-placement="top" data-toggle="tooltip" title="RSS"><i class="fa fa-rss"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/retina-1.1.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script> <!-- jQuery cookie -->
+    <script type="text/javascript" src="js/styleswitch.js"></script> <!-- Style Colors Switcher -->
+    <script src="js/jquery.fractionslider.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="js/jquery.smartmenus.min.js"></script>
+    <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/jflickrfeed.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/swipe.js"></script>
+    <script type="text/javascript" src="js/jquery-scrolltofixed-min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <!-- Start Style Switcher -->
+    <div class="switcher"></div>
+    <!-- End Style Switcher -->
+    <script>
+        $(window).load(function(){
+            $('.slider').fractionSlider({
+                'fullWidth': 			true,
+                'controls': 			true,
+                'responsive': 			true,
+                'dimensions': 			"1920,450",
+                'increase': 			true,
+                'pauseOnHover': 		true,
+                'slideEndAnimation': 	true,
+                'autoChange':           true
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+-Ö\êÐ      Yœ“rYœ“t>;±Yœ“r       :http://www.coastbus.com/ necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Tue, 22 Aug 2017 13:26:19 GMT
+Content-Type: text/html
+Content-Length: 29819
+Server: Apache/2
+Last-Modified: Thu, 22 Jun 2017 12:41:21 GMT
+Etag: "747b-5528bcd438d21"
+Accept-Ranges: bytes
+Cache-Control: max-age=3600
+Expires: Tue, 22 Aug 2017 14:02:06 GMT
+Age: 1370
+ charset windows-1252 uncompressed-len 0 predictor::resource-count 62 predictor::http://www.coastbus.com/css/bootstrap.min.css 1,2,1503433586,0 predictor::http://www.coastbus.com/css/style.css 1,2,1503433586,0 predictor::http://www.coastbus.com/css/layout/wide.css 1,2,1503433586,0 predictor::http://www.coastbus.com/css/fractionslider.css 1,2,1503433586,0 predictor::http://www.coastbus.com/css/style-fraction.css 1,2,1503433586,0 predictor::http://www.coastbus.com/css/switcher.css 1,2,1503433586,0 predictor::http://www.coastbus.com/images/hd2.png 1,2,1503433586,0 predictor::http://www.coastbus.com/images/fraction-slider/gadgets/ramadhan.jpg 1,2,1503433586,0 predictor::http://www.coastbus.com/images/fraction-slider/fraction_2.png 1,2,1503433586,0 predictor::http://www.coastbus.com/images/fraction-slider/076a_2.jpg 1,2,1503433586,0 predictor::http://www.coastbus.com/images/fraction-slider/NEW-7.png 1,2,1503433586,0 predictor::http://www.coastbus.com/images/fraction-slider/2buses_2.jpg 1,2,1503433586,0 predictor::http://www.coastbus.com/images/fraction-slider/NEW-7%20-%20Copy.png 1,2,1503433586,0 predictor::http://www.coastbus.com/images/fraction-slider/2buses1.jpg 1,2,1503433586,0 predictor::http://www.skypeassets.com/i/scom/js/skype-uri.js 1,2,1503433586,0 predictor::http://www.coastbus.com/images/portfolio/portfolio_1.png 1,2,1503433586,0 predictor::http://www.coastbus.com/images/portfolio/portfolio_1_1.png 1,2,1503433586,0 predictor::http://www.coastbus.com/images/portfolio/portfolio_1_2.png 1,2,1503433586,0 predictor::http://www.coastbus.com/images/portfolio/portfolio_1_5.png 1,2,1503433586,0 predictor::http://www.coastbus.com/images/portfolio/logo%20small.png 1,2,1503433586,0 predictor::http://www.coastbus.com/images/portfolio/portfolio_5.png 1,2,1503433586,0 predictor::http://www.coastbus.com/images/portfolio/portfolio_2.png 1,2,1503433586,0 predictor::http://www.coastbus.com/images/portfolio/portfolio_3.png 1,2,1503433586,0 predictor::http://www.coastbus.com/js/jquery-1.10.2.min.js 1,2,1503433586,0 predictor::http://www.coastbus.com/js/bootstrap.min.js 1,2,1503433586,0 predictor::http://www.coastbus.com/js/jquery.easing.1.3.js 1,2,1503433586,0 predictor::http://www.coastbus.com/js/retina-1.1.0.min.js 1,2,1503433586,0 predictor::http://www.coastbus.com/js/jquery.cookie.js 1,2,1503433586,0 predictor::http://www.coastbus.com/js/styleswitch.js 1,2,1503433586,0 predictor::http://www.coastbus.com/js/jquery.fractionslider.js 1,2,1503433586,0 predictor::http://www.coastbus.com/js/jquery.smartmenus.min.js 1,2,1503433586,0 predictor::http://www.coastbus.com/js/jquery.smartmenus.bootstrap.min.js 1,2,1503433586,0 predictor::http://www.coastbus.com/js/jquery.jcarousel.js 1,2,1503433586,0 predictor::http://www.coastbus.com/js/jflickrfeed.js 1,2,1503433586,0 predictor::http://www.coastbus.com/js/jquery.magnific-popup.min.js 1,2,1503433586,0 predictor::http://www.coastbus.com/js/jquery.isotope.min.js 1,2,1503433586,0 predictor::http://www.coastbus.com/js/swipe.js 1,2,1503433586,0 predictor::http://www.coastbus.com/js/jquery-scrolltofixed-min.js 1,2,1503433586,0 predictor::http://www.coastbus.com/js/main.js 1,2,1503433586,0 predictor::http://www.coastbus.com/css/font-awesome.css 1,2,1503433586,0 predictor::http://www.coastbus.com/css/magnified.css 1,2,1503433586,0 predictor::http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700 1,2,1503433586,0 predictor::http://fonts.googleapis.com/css?family=Lato:400,300,700 1,2,1503433586,0 predictor::http://fonts.googleapis.com/css?family=PT+Sans:400,700 1,2,1503433586,0 predictor::http://www.coastbus.com/images/fraction-slider/NEW-6.png 1,2,1503433586,0 predictor::http://www.coastbus.com/images/fraction-slider/fs.spinner.gif 1,2,1503433586,0 predictor::http://fonts.gstatic.com/s/opensans/v14/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2 1,1,1503433502,0 predictor::http://www.coastbus.com/fonts/fontawesome-webfontba72.woff?v=4.0.3 1,1,1503433502,0 predictor::http://fonts.gstatic.com/s/opensans/v14/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2 1,1,1503433502,0 predictor::http://fonts.gstatic.com/s/opensans/v14/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2 1,1,1503433502,0 predictor::https://swc.cdn.skype.com/contactme/v/1.0.0/skype-uri.min.js 1,2,1503433586,0 predictor::http://fonts.gstatic.com/s/ptsans/v8/ATKpv8nLYAKUYexo8iqqrg.woff2 1,1,1503433502,0 predictor::http://www.coastbus.com/css/icons/switcher.png 1,2,1503433586,0 predictor::http://www.skypeassets.com/i/scom/js/skype-analytics.js 1,2,1503433586,0 predictor::https://swc.cdn.skype.com/sdk/0.10.47/sdk.min.js 1,2,1503433586,0 predictor::http://www.skypeassets.com/i/scom/images/skype-buttons/dropdowncallbutton_16px.png 1,1,1503433502,0 predictor::https://swc.cdn.skype.com/sdk/0.10.47/sdk-run.min.js 1,2,1503433586,0 predictor::https://a.config.skype.com/config/v1/skype/1.00/lwc?configOption=prod&callback=Skype.ECS.jsonpCallback 1,1,1503433502,0 predictor::https://swc.cdn.skype.com/v/0.27.6/sdk-loader.min.js 1,2,1503433586,0 predictor::https://swc.cdn.skype.com/v/0.27.6/sdk-core.min.js 1,2,1503433586,0 predictor::https://swc.cdn.skype.com/v/0.27.6/css/lwc-sdk.min.css 1,2,1503433586,0 predictor::https://b.config.skype.com/config/v1/skype/1.00/lwc?configOption=prod&callback=Skype.ECS.jsonpCallback 1,1,1503433586,0   t{

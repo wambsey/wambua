@@ -1,0 +1,166 @@
+.maintable		{ } 
+
+.bodytext		{ font-family:Arial, Helvetica, Geneva, sans-serif;color: black; font-size:10pt; }
+.bodytextbold		{ font-family:Arial, Helvetica, Geneva, sans-serif; color: black;  font-size:10pt;font-weight: bold; }
+.bodytextbig		{ font-family:Arial, Helvetica, Geneva, sans-serif;color: black; font-size:12pt;}
+.bodytextboldbig	{ font-family:Arial, Helvetica, Geneva, sans-serif;color: black;font-size:12pt; font-weight: bold }
+.bodytextred            { color: red; font-size: x-small }
+
+.binheading		{ font-family:Arial, Helvetica, Geneva, sans-serif;color: black; font-size:10pt; font-weight: bold; text-decoration:none; }
+.bintext		{ font-family:Arial, Helvetica, Geneva, sans-serif;color: black; font-size:8pt; }
+.binlink		{ font-family:Arial, Helvetica, Geneva, sans-serif;color: black; font-size:8pt; }
+
+.devcomment		{ color: darkgreen; font-size: x-small; align: left }
+
+<!-- Admin Styles -->
+.bogusAdminStyles       {text-decoration:none}
+.groupingBar            {background-color:#DCDCDC;font-family:Arial,Helvetica;font-size:12pt;color:black;font-weight:bold}
+
+
+<!-- Tree Styles -->
+.bogusTreeStyles        {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:black;font-weight:bold}
+.showUsersTreeItem      {font-family:Trebuchet MS,Arial;font-size:8pt;color:black}
+.treeItem               {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:black}
+.treeItemAnnotated      {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:blue;font-weight:bold}
+.treeItemDisabled       {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:gray}
+.site                   {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:black;font-weight:bold}
+.siteAnnotated          {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:blue;font-weight:bold}
+.siteDisabled           {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:gray}
+.group                  {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:black}
+.groupAnnotated         {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:blue;font-weight:bold}
+.groupDisabled          {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:gray}
+.user                   {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:black}
+.userAnnotated          {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:blue;font-weight:bold}
+.userDisabled           {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:gray}
+.rco                    {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:black}
+.rcoAnnotated           {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:blue;font-weight:bold}
+.rcoDisabled            {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:gray}
+.rcoMirror              {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:black}
+.rcoMirrorAnnotated     {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:blue;font-weight:bold}
+.rcoMirrorDisabled      {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:gray}
+.rcoUnpublished         {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:black;font-style:italic}
+.rcoUnpublishedAnnotated {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:blue;font-weight:bold;font-style:italic}
+.rcoUnpublishedDisabled {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:gray;font-style:italic}
+.rcoMirrorUnpublished   {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:black;font-style:italic}
+.rcoMirrorUnpublishedAnnotated {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:blue;font-weight:bold;font-style:italic}
+.rcoMirrorUnpublishedDisabled  {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:gray;font-style:italic}
+.category               {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:black}
+.categoryAnnotated      {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:blue;font-weight:bold}
+.categoryDisabled       {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:gray}
+.questionBank           {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:black}
+.questionBankAnnotated  {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:blue;font-weight:bold}
+.questionBankDisabled   {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:gray}
+
+
+<!-- Property Sheet Styles -->
+.bogusPropertyStyles          {text-decoration:none}
+.disabledPropertyText         {text-decoration:none;font-family:Trebuchet MS,Arial;color:gray}
+.tab                          {background-color:#DCDCDC}
+.tabSelected                  {background-color:#CCCCFF;font-family:Arial;font-size:10pt;color:black;font-weight:bold}
+.propertySheet                {background-color:#FFFFFF}
+.propertyText                 {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:8pt;color:black}
+.propertyLabel                {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:black}
+.propertyLabelRequired        {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:black;font-weight:bold}
+.propertyLabelDisabled        {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:gray}
+.propertyLabelCustom          {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:black}
+.propertyLabelCustomRequired  {text-decoration:none;font-family:Trebuchet MS,Arial;font-size:10pt;color:black;font-weight:bold}
+.propertySeparator            {background-color:#DCDCDC;font-family:Arial;font-size:14pt;color:black;font-weight:bold}
+.propertyComment              {font-family:Arial;font-size:8pt;color:#336699}
+.propertyValueSet             {font-family:Arial;font-size:8pt;color:#336699}
+
+
+<!-- View List Styles -->
+.bogusViewListStyles       {text-decoration:none}
+.viewListHeading           {background-color:#DCDCDC;text-decoration:none;font-family:Arial;font-size:10pt;color:black;font-weight:bold}
+.viewListColumn            {text-decoration:none;font-family:Arial;font-size:8pt;color:black}
+.unpublishedViewListColumn {text-decoration:none;font-family:Arial;font-size:8pt;color:black;font-style:italic}
+.viewListProperties        {font-family:Arial,Helvetica,Geneva,sans-serif;font-size:9pt;color:#336699}
+
+<!-- General Bin Styles -->
+.bogusBinStyles         {text-decoration:none}
+.binback		{ background-color:#FFFDF3 }
+.binborder		{ background-color:#000000 }
+
+<!-- CALENDAR Styles -->
+<!-- Calendar Tabs Styles -->
+.bogusCalTabStyles      {text-decoration:none}
+.tabsetback 		{ background-color:#FF0000 }
+.tabbackoff 		{ background-color:#6699CC }
+.tabbackon 		{ background-color:#CCCCCC }
+.tablinkoff		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#FFFFFF; text-decoration:none; font-size:10pt; font-weight:bold }
+.tablinkon 		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#000000; font-size:10pt; font-weight:bold }
+
+.link			{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#FFFFFF; font-size:10pt; }
+.linknoline		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#FFFFFF; text-decoration:none; font-size:10pt; }
+.slinknoline		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#FFFFFF; text-decoration:none; font-size:8pt; }
+.hilink			{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#33CCFF; font-size:10pt; font-weight:bold }
+.linksmall		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#FFFFFF; font-size:8pt; }
+
+<!-- Calendar Styles -->
+.bogusCalendarStyles    {text-decoration:none}
+.calback		{ background-color:#445f8C }
+.calimg			{ background-image:url(../../calendar/img/blue_back.JPG); background-color:#336688 }
+.calmonth  		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#FFCC00; font-size:10pt;  }
+.calhimonth  		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#FFCC00; font-size:10pt;  font-weight:bold; }
+.calweek		{ color:#FFCC00; font-size:10pt; }
+.calday			{ color:#FFFFFF; font-size:10pt; }
+.caltoday		{ color:#FFCC00; font-size:10pt; font-weight:bold; }
+.calhiday 		{ color:#FFFF00; font-size:10pt; font-weight:bold; }
+.calconflict 		{ color:#FFFF00; font-size:10pt; }
+.calconflictback 	{ background-color:#FF0000 }
+
+.caldayback 		{ background-color:#336699 }
+.caloddback		{ background-color:#336688 }
+.caltodayback  		{ background-color:#6699CC }
+.calheading  		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#000000; font-size:10pt; }
+.eventlink		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#FFCC00; font-size:10pt; }
+
+<!-- Calendar Bin Styles -->
+<!-- NOTE: Do not include font-family in Calendar TT, Fixed Fonts -->
+.bogusCalBinStyles      {text-decoration:none}
+.calbinimg 		{ background-image:url(../../calendar/img/bin_calendar.gif); background-color:#FFFFCC }
+.calbinmonth		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#000099; font-size:10pt;  font-weight:bold; }
+.calbinhimonth		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#000099; font-size:10pt;  font-weight:bold }
+.calbinweek		{ color:#000099; font-size:10pt;  font-weight:bold }
+.calbinday		{ color:#000099; font-size:10pt; }
+.calbintoday		{ color:#FF0000; font-size:10pt; font-weight:bold }
+.calbinhiday		{ color:#FF0000; font-size:10pt; font-weight:bold }
+.calbinconflictback 	{ color:#FFFF00; font-size:10pt; }
+
+
+<!-- Calendar Sub Events Panel Styles -->
+.bogusCalSubEventsStyles  {text-decoration:none}
+.calsubback		{ background-color:#336699 }
+.calsubtext		{ font-family:Arial, Helvetica, Geneva, sans-serif; color:#FFCC00; font-size:10pt;  }
+
+<!-- End CALENDAR Styles -->
+<!-- Label Style -->
+.HiddenLabel  {position:absolute;left:0px;top:-500px;width:1px;height:1px;overflow:hidden;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ž~W3‰      Y¹¡Y¹¡>ýùZt¬•   A    :http://ilearning.oracle.com/ilearn/en/shared/css/ilearn_base.css necko:classified 1 request-method GET response-head HTTP/1.1 200 OK
+Date: Wed, 23 Aug 2017 10:21:37 GMT
+Server: Oracle-Application-Server-10g
+Last-Modified: Mon, 04 Mar 2013 02:04:49 GMT
+Accept-Ranges: bytes
+Content-Length: 10238
+Content-Type: text/css
+ uncompressed-len 0   'þ
